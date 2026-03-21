@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirjiniel Archange mal Compris - My Bible My creation</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background: linear-gradient(to bottom, #0b0c10, #1a1d23); color:#c5c6c7; font-family:'Arial', sans-serif; overflow-x:hidden; }
+  a { text-decoration:none; color:#45a29e; font-weight:bold; }
+  header { text-align:center; padding:50px; font-size:3em; color:#66fcf1; text-shadow:2px 2px 8px #000; }
+  nav { text-align:center; margin-bottom:40px; }
+  nav a { margin:0 15px; color:#ffcc00; font-size:1.2em; transition:0.3s; }
+  nav a:hover { color:#66fcf1; }
+  section { padding:40px; max-width:1000px; margin:auto; }
+  h2 { color:#ffcc00; text-shadow: 1px 1px 4px #000; margin-bottom:20px; }
+  h3 { color:#66fcf1; margin-bottom:10px; }
+  .character, .story-section, .episode { margin-bottom:40px; }
+  img { max-width:100%; height:auto; margin:20px 0; border-radius:10px; }
+  video { display:block; margin:20px auto; max-width:100%; border-radius:10px; }
+  .carousel { display:flex; overflow-x:auto; scroll-behavior:smooth; gap:20px; padding-bottom:20px; }
+  .carousel::-webkit-scrollbar { display:none; }
+  .carousel-card { min-width:250px; background:#1f2833; border:2px solid #45a29e; border-radius:15px; padding:20px; flex-shrink:0; text-align:center; transition: transform 0.3s, border-color 0.3s; }
+  .carousel-card:hover { transform: scale(1.05); border-color:#ffcc00; }
+  @keyframes glow { 0%,100% { text-shadow:0 0 10px #ffcc00; } 50% { text-shadow:0 0 30px #66fcf1; } }
+  .glow { animation: glow 2s infinite; }
+  .powers-list { display:grid; grid-template-columns: 1fr 1fr; gap:20px; }
+  .power-card { background:#1a1d23; border:2px solid #66fcf1; border-radius:10px; padding:20px; transition:0.3s; }
+  .power-card:hover { border-color:#ffcc00; }
+  .episode h4 { color:#ffcc00; margin-bottom:10px; }
+  .episode p { margin-bottom:15px; line-height:1.6em; }
+
+</style>
+</head>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<body>
+
+<header class="glow">Kirjiniel - L'Archange Brisé</header>
+
+<nav>
+  <a href="#universe">Univers</a>
+  <a href="#characters">Personnages</a>
+  <a href="#story">Histoire</a>
+  <a href="#powers">Pouvoirs</a>
+  <a href="#timeline">Chronologie</a>
+  <a href="#episodes">Épisodes</a>
+  <a href="#trailer">Trailer</a>
+</nav>
+
+<section id="universe">
+  <h2>Univers</h2>
+  <p>Un monde où le ciel juge sans comprendre, où le paradis et l’enfer se disputent le pouvoir. Kirjiniel, archange déchu, devient le juge entre lumière et ténèbres. Les humains commencent à influencer le destin, et les alliances changent en permanence.</p>
+</section>
+
+<section class="characters">
+
+  <h2>Les Entités Célestes</h2>
+
+  <div class="grid">
+
+    <div class="card kirjiniel">
+      <img src="/images/kirjiniel.png" alt="kirjiniel">
+      <h3>Kirjiniel</h3>
+      <p>L’équilibre entre lumière et ténèbres.</p>
+    </div>
+
+    <div class="card seraphion" alt="seraphion">
+      <img src="/images/seraphion.png">
+      <h3>Seraphion</h3>
+      <p>La perfection divine incarnée.</p>
+    </div>
+
+    <div class="card vaelyra">
+      <img src="/images/vaelyra.png" alt="vaelyra">
+      <h3>Vaelyra</h3>
+      <p>La dualité instable et rebelle.</p>
+    </div>
+
+    <div class="card nocthar">
+      <img src="/images/nocthar.png" alt="nocthar">
+      <h3>Nocthar</h3>
+      <p>L’ombre absolue et destructrice.</p>
+    </div>
+
+    <div class="card elyon">
+      <img src="/images/Elyon.png" alt="Elyon">
+      <h3>Elyon</h3>
+      <p>Le gardien du savoir ancien.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+
+.characters {
+  text-align:center;
+  padding:80px 20px;
+  background:#0b0c10;
+  color:white;
+}
+
+.characters h2 {
+  font-size:2.5em;
+  margin-bottom:50px;
+  color:#ffcc00;
+}
+
+/* GRID */
+.grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+}
+
+/* CARD */
+.card {
+  width:220px;
+  transition:0.4s;
+}
+
+.card img {
+  width:100%;
+  transition:0.4s;
+}
+
+/* HOVER */
+.card:hover {
+  transform:scale(1.08);
+}
+
+/* GLOWS PAR PERSO */
+.kirjiniel img { filter: drop-shadow(0 0 20px #66fcf1); }
+.seraphion img { filter: drop-shadow(0 0 25px gold); }
+.vaelyra img { filter: drop-shadow(0 0 20px purple); }
+.nocthar img { filter: drop-shadow(0 0 25px red); }
+.elyon img { filter: drop-shadow(0 0 20px white); }
+
+.card h3 {
+  margin-top:10px;
+}
+
+.card p {
+  opacity:0.7;
+  font-size:0.9em;
+}
+
+</style>
+
+<section id="character-descriptions">
+  <h2>Descriptions des Personnages</h2>
+  <div style="position:relative; width:100%;">
+    <button class="carousel-btn left">&#10094;</button>
+    <button class="carousel-btn right">&#10095;</button>
+
+    <div class="carousel">
+      <div class="carousel-card">
+        <h3>Kirjiniel</h3>
+        <p>L'Archange déchu. Portant l'équilibre entre lumière et ténèbres. Arme : Aequitas Nocturna.</p>
+      </div>
+      <div class="carousel-card">
+        <h3>Seraphion</h3>
+        <p>L’archange parfait opposé à Kirjiniel. Arme : Lux Divina.</p>
+      </div>
+      <div class="carousel-card">
+        <h3>Vaelyra</h3>
+        <p>Ancienne ange de guerre, alliée fidèle de Kirjiniel.</p>
+      </div>
+      <div class="carousel-card">
+        <h3>Nocthar</h3>
+        <p>L’ombre absolue et destructrice.</p>
+      </div>
+      <div class="carousel-card">
+        <h3>Elyon</h3>
+        <p>Le gardien du savoir ancien.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <h2>Histoire Complète</h2>
+  <div class="story-section">
+    <h3>Origine</h3>
+    <p>Kirjiniel était un archange créé pour comprendre ce que même les autres anges ne pouvaient pas comprendre. Contrairement aux autres, il n’obéissait pas aveuglément mais analysait, doutait et jugeait.</p>
+  </div>
+  <div class="story-section">
+    <h3>Chute</h3>
+    <p>Il ne chute pas par orgueil mais parce qu’il pose LA question : "Et si le bien n’était pas toujours juste ?". Résultat : rejet du ciel, refus de l’enfer, existence entre deux réalités. Il devient une anomalie divine.</p>
+  </div>
+  <div class="story-section">
+    <h3>Nature</h3>
+    <p>Ni ange ni démon. On l’appelle "Le Fragment du Jugement".</p>
+  </div>
+</section>
+
+<section id="powers">
+  <h2>Pouvoirs</h2>
+  <div class="powers-list">
+    <div class="power-card"><strong>Kirjiniel :</strong> Lumière fracturée, Ombre consciente, Verdict absolu.</div>
+    <div class="power-card"><strong>Seraphion :</strong> Lumière pure, Armée d’anges, Vitesse divine.</div>
+  </div>
+<div style="position:relative; width:100%;">
+  <button class="carousel-btn left">&#10094;</button>
+  <div class="carousel">
+    <!-- tes cartes ici -->
+  </div>
+  <button class="carousel-btn right">&#10095;</button>
+</div>
+
+</section>
+
+<section id="prologue">
+
+  <div class="cosmic-bg"></div>
+
+  <div class="prologue-content">
+
+    <h2>Prologue — Le Jugement Interdit</h2>
+
+    <div class="prologue-text">
+
+      <p>Le Ciel n’a jamais été conçu pour être compris.</p>
+
+      <p>Depuis le commencement, il existait comme une mécanique parfaite. Chaque ange, chaque archange, chaque entité céleste suivait une volonté unique, absolue, immuable.</p>
+
+      <p>Il n’y avait pas de doute. Pas d’erreur. Pas de question. Seulement le jugement.</p>
+
+      <p>Et ce jugement tombait sans distinction. Sur les humains. Sur les âmes. Sur tout ce qui osait exister en dehors de la perfection.</p>
+
+      <p>Mais même dans un système parfait… une faille peut apparaître.</p>
+
+      <p>Ce ne fut pas une erreur. Ce ne fut pas une rébellion.</p>
+
+      <p class="highlight">Ce fut une décision.</p>
+
+      <p>Le Conseil Céleste observa l’humanité. Des êtres imparfaits, capables du pire comme du meilleur. Et pourtant, ils étaient jugés de la même manière.</p>
+
+      <p>Sans nuance. Sans compréhension.</p>
+
+      <p>Alors une idée interdite prit forme :</p>
+
+      <p class="highlight">Créer un être capable de comprendre.</p>
+
+      <p class="name">Kirjiniel.</p>
+
+      <p>Il ne fut pas créé comme les autres.</p>
+
+      <p>On ne lui donna pas seulement la lumière… mais aussi la conscience. La réflexion. Le doute.</p>
+
+      <p>Quand il ouvrit les yeux pour la première fois… il ne s’agenouilla pas.</p>
+
+      <p>Il observa.</p>
+
+      <p>Le Ciel. Les anges. Le monde.</p>
+
+      <p>Et dans ce regard… il y avait déjà quelque chose d’anormal.</p>
+
+      <p class="highlight">Il comprenait.</p>
+
+      <p>Au début, personne ne s’en inquiéta. Kirjiniel accomplissait sa fonction. Il jugeait. Il exécutait.</p>
+
+      <p>Mais contrairement aux autres… il réfléchissait.</p>
+
+      <p>Chaque jugement devenait une question.</p>
+
+      <p>Chaque ordre, une analyse.</p>
+
+      <p>Et lentement… il commença à voir ce que les autres ne voyaient pas.</p>
+
+      <p>Le moment qui changea tout arriva sans annonce.</p>
+
+      <p class="highlight-red">Une ville devait être détruite.</p>
+
+      <p>Motif : corruption.</p>
+
+      <p>Kirjiniel descendit.</p>
+
+      <p>Il ne frappa pas immédiatement.</p>
+
+      <p>Il observa.</p>
+
+      <p>Des vies. Des erreurs. Mais aussi du sens.</p>
+
+      <p>Un homme volait pour survivre.</p>
+
+      <p>Une femme mentait pour protéger.</p>
+
+      <p>Un enfant priait… sans comprendre pourquoi.</p>
+
+      <p>Alors Kirjiniel resta immobile.</p>
+
+      <p>Sa lame apparut dans sa main.</p>
+
+      <p>Le monde retint son souffle.</p>
+
+      <p>Puis…</p>
+
+      <p class="highlight">il s’arrêta.</p>
+
+      <p class="quote">"Je refuse ce jugement."</p>
+
+      <p>Ce fut la première fracture du Ciel.</p>
+
+      <p>Alors ils envoyèrent celui qui ne doutait jamais.</p>
+
+      <p class="name">Seraphion.</p>
+
+      <p>Quand il apparut, l’air lui-même sembla se figer.</p>
+
+      <p>Leur échange fut simple.</p>
+
+      <p class="quote">"Exécute le jugement."</p>
+      <p class="quote">"Il est incomplet."</p>
+      <p class="quote">"Il est parfait."</p>
+      <p class="quote">"Alors il est faux."</p>
+
+      <p>Le combat éclata.</p>
+
+      <p>Parfait contre imprévisible.</p>
+
+      <p>Chaque attaque de Seraphion était pure, calculée.</p>
+
+      <p>Chaque mouvement de Kirjiniel… vivant.</p>
+
+      <p>Et dans cette différence…</p>
+
+      <p class="highlight">la perfection fut dépassée.</p>
+
+      <p>Le Ciel ne pouvait l’accepter.</p>
+
+      <p>Kirjiniel fut convoqué. Jugé. Condamné.</p>
+
+      <p>Dernière chance :</p>
+
+      <p class="quote">"Renonce à ta conscience."</p>
+
+      <p>Réponse :</p>
+
+      <p class="quote">"Je ne peux pas ignorer la vérité."</p>
+
+      <p>Alors ils tentèrent de l’effacer.</p>
+
+      <p>Mais au lieu de disparaître… il changea.</p>
+
+      <p>Sa lumière se fissura.</p>
+
+      <p>Et dans cette fissure… les ténèbres entrèrent.</p>
+
+      <p>Pas comme une corruption… mais comme un équilibre.</p>
+
+      <p class="highlight">⚔️ Aequitas Nocturna naquit</p>
+
+      <p>Une arme qui ne juge pas selon des règles… mais selon la vérité.</p>
+
+      <p>La guerre éclata dans le Ciel.</p>
+
+      <p>Mais Kirjiniel n’était déjà plus un ange.</p>
+
+      <p>Il ne suivait plus les lois.</p>
+
+      <p>Il ne suivait plus les ordres.</p>
+
+      <p class="highlight">Il suivait son propre jugement.</p>
+
+      <p>Finalement, le jugement absolu fut utilisé.</p>
+
+      <p>Ses ailes se brisèrent.</p>
+
+      <p>Sa lumière explosa.</p>
+
+      <p>Et il tomba.</p>
+
+      <p class="highlight-red">Ni en enfer.</p>
+      <p class="highlight-blue">Ni dans le Ciel.</p>
+
+      <p class="final">Entre les deux.</p>
+
+      <p>Silence.</p>
+
+      <p>Puis…</p>
+
+      <p>Il ouvrit les yeux.</p>
+
+      <p>Pour la première fois… libre.</p>
+
+      <p class="quote final">"Alors c’est ça… être libre."</p>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+
+/* STRUCTURE */
+#prologue {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+/* FOND COSMIQUE */
+.cosmic-bg {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, #1f2833, #0b0c10, #000);
+  animation: moveBg 30s linear infinite;
+  z-index: 0;
+}
+
+.cosmic-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.15;
+  animation: stars 80s linear infinite;
+}
+
+/* CONTENU */
+.prologue-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.prologue-content h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ffcc00;
+  margin-bottom: 40px;
+  text-shadow: 0 0 20px #ffcc00;
+}
+
+/* TEXTE */
+.prologue-text p {
+  margin-bottom: 15px;
+  line-height: 1.7em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+/* ANIMATION AUTO (long texte) */
+.prologue-text p {
+  animation-delay: calc(0.1s * var(--i));
+}
+
+/* STYLES */
+.highlight { color:#66fcf1; font-weight:bold; }
+.highlight-red { color:#ff4444; }
+.highlight-blue { color:#66aaff; }
+.name { color:#ffcc00; font-size:1.3em; text-shadow:0 0 10px #ffcc00; }
+.quote { text-align:center; font-style:italic; }
+.final { text-align:center; font-size:1.4em; }
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  to { opacity:1; transform:translateY(0); }
+}
+
+@keyframes moveBg {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(-300px,-300px); }
+}
+
+@keyframes stars {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-600px); }
+}
+
+</style>
+
+<section id="episodes">
+  <h2>Épisodes 1 à 24</h2>
+
+  <section id="episodes">
+  <h2>Épisodes 1 à 12</h2>
+
+  <!-- Épisode 1 -->
+  <div class="episode">
+    <h4>Épisode 1 : L’Archange Errant</h4>
+    <p>Le vent céleste était froid et tranchant. Des éclats de lumière et d’ombre dansaient sur le sol en ruines, projetés par la lame de <strong>Kirjiniel</strong>. Chaque pas résonnait dans le silence pesant de cette cité abandonnée. Il était seul, ni ange ni démon, un fragment vivant du jugement divin.</p>
+    <p>Des cris déchirèrent l’air. Un archange envoyé par le ciel, ailes étincelantes, surgit devant lui :</p>
+    <p><em>"Kirjiniel, tu n’as pas le droit d’exister ! Reviens au ciel et obéis !" </em></p>
+    <p>Kirjiniel leva Aequitas Nocturna, la lumière et les ténèbres s’entrelaçant autour de sa lame :</p>
+    <p><em>"Obéir… est une faiblesse que je ne me permettrai jamais."</em></p>
+    <p>Le choc fut fulgurant. L’archange fut projeté au sol, vaincu mais vivant. Kirjiniel reprit sa route, laissant derrière lui le champ de ruines comme message : il ne suivrait plus aucune loi extérieure.</p>
+  </div>
+
+  <!-- Épisode 2 -->
+  <div class="episode">
+    <h4>Épisode 2 : Les Alliés Éveillés</h4>
+    <p>Quelques jours plus tard, Kirjiniel arriva près d’une ville ravagée par les combats célestes. Là, il rencontra <strong>Vaelyra</strong>, ancienne ange de guerre bannie pour avoir refusé de tuer des innocents. Son regard déterminé reflétait une douleur similaire à celle de Kirjiniel.</p>
+    <p><em>"Tu n’es pas seul,"</em> dit-elle en brandissant sa lame. <em>"Mais il faut savoir choisir ses ennemis."</em></p>
+    <p>Bientôt, une ombre se matérialisa à ses côtés : <strong>Nocthar</strong>, un être né des ténèbres, silencieux et protecteur. Enfin, Elyon, un humain qui avait survécu aux jugements, observa Kirjiniel avec curiosité :</p>
+    <p><em>"Pourquoi moi ? Pourquoi nous sauver ?"</em></p>
+    <p><em>"Parce que même le ciel peut se tromper. Et toi… tu pourrais comprendre ce qu’il ne peut pas voir."</em> répondit l’Archange Déchu.</p>
+  </div>
+
+  <!-- Épisode 3 -->
+  <div class="episode">
+    <h4>Épisode 3 : Le Miroir Parfait</h4>
+    <p>Le ciel envoya <strong>Seraphion</strong>, l’archange parfait aux six ailes lumineuses, armé de Lux Divina. Son apparence était éblouissante, presque douloureuse pour les yeux. </p>
+    <p><em>"Tu n’as pas le droit de rester ici, Kirjiniel."</em> déclara Seraphion.</p>
+    <p><em>"Et toi, tu n’as pas le droit de juger à ma place."</em> répondit Kirjiniel.</p>
+    <p>Le combat fut monumental. Le choc des épées fit trembler le ciel. La lumière pure de Seraphion affrontait l’ombre vivante de Kirjiniel. Aucun ne l’emporta. Chacun était le reflet de l’autre, un miroir de ce que le monde avait rejeté.</p>
+  </div>
+
+  <!-- Épisode 4 -->
+  <div class="episode">
+    <h4>Épisode 4 : L’Éveil des Humains</h4>
+    <p>Le conflit attira l’attention du monde humain. Des fragments de pouvoirs célestes et démoniaques éveillèrent certains mortels. Kirjiniel intervint, protégeant les innocents. Elyon comprit que le vrai jugement ne venait pas de la force, mais du choix et de la responsabilité.</p>
+  </div>
+
+  <!-- Épisode 5 -->
+  <div class="episode">
+    <h4>Épisode 5 : La Guerre Céleste Commence</h4>
+    <p>Le ciel et l’enfer déclarèrent la guerre ouverte. Kirjiniel affronta des légions d’anges et de démons, ses lames taillant la lumière et l’ombre. Chaque bataille laissait derrière elle un champ de ruines, mais les humains commençaient à s’organiser, inspirés par sa détermination.</p>
+  </div>
+
+  <!-- Épisode 6 -->
+  <div class="episode">
+    <h4>Épisode 6 : Sacrifices et Décisions</h4>
+    <p>Vaelyra repoussa une attaque massive, sauvant Elyon et plusieurs humains, mais disparaissant dans une explosion de lumière. Nocthar fusionna avec les ombres pour contenir une armée entière. Kirjiniel mesura le prix de la liberté et ressentit la douleur de perdre ses alliés.</p>
+  </div>
+
+  <!-- Épisode 7 -->
+  <div class="episode">
+    <h4>Épisode 7 : L’Éveil de l’Aequitas Absoluta</h4>
+    <p>Kirjiniel sentit Aequitas Absoluta atteindre sa puissance maximale. Sa lame absorbait la lumière et l’ombre, les transformant en une énergie capable de remodeler la réalité. Seraphion fut impressionné : la force de Kirjiniel n’était plus seulement physique, mais morale et symbolique.</p>
+  </div>
+
+  <!-- Épisode 8 -->
+  <div class="episode">
+    <h4>Épisode 8 : La Révolte Humaine</h4>
+    <p>Inspirés par Kirjiniel, les humains éveillèrent des pouvoirs latents et prirent les armes. Elyon observa le champ de bataille : <em>"Nous ne sommes plus des victimes… nous sommes les auteurs de notre destin."</em> La lutte devint une révolution pour la liberté.</p>
+  </div>
+
+  <!-- Épisode 9 -->
+  <div class="episode">
+    <h4>Épisode 9 : La Bataille des Cieux</h4>
+    <p>Kirjiniel et Seraphion s’affrontèrent dans le ciel en ruines. Les éclairs de lumière et d’ombre illuminaient le monde. Les humains protégeaient les civils, tandis que la guerre s’intensifiait, touchant chaque ville et village.</p>
+  </div>
+
+  <!-- Épisode 10 -->
+  <div class="episode">
+    <h4>Épisode 10 : Le Sacrifice de Vaelyra</h4>
+    <p>Vaelyra se sacrifia pour sceller une faille démoniaque, laissant Nocthar protéger les humains depuis les ombres. Kirjiniel ressentit le coût élevé de la liberté et la lourdeur de ses responsabilités.</p>
+  </div>
+
+  <!-- Épisode 11 -->
+  <div class="episode">
+    <h4>Épisode 11 : La Montée du Pouvoir Absolu</h4>
+    <p>Aequitas Absoluta atteignit son apogée. Kirjiniel devint l’incarnation du jugement et de la liberté. Ses coups remodelaient le terrain et désorientaient Seraphion, qui ne savait plus comment l’arrêter.</p>
+  </div>
+
+  <!-- Épisode 12 -->
+  <div class="episode">
+    <h4>Épisode 12 : L’Unité Humaine</h4>
+    <p>Les humains prirent enfin une part active dans la guerre. Kirjiniel les guida vers la liberté, faisant d’eux les auteurs de leur destin. La guerre devint une lutte pour le choix et le futur du monde, plus qu’un simple affrontement entre anges et démons.</p>
+  </div>
+
+<section id="episodes-2">
+  <h2>Épisodes 13 à 24 : Climax et Jugement Final</h2>
+
+  <!-- Épisode 13 -->
+  <div class="episode">
+    <h4>Épisode 13 : L’Assaut des Armées</h4>
+    <p>Les armées du ciel et de l’enfer se rassemblèrent pour écraser Kirjiniel et ses alliés. Le ciel était assombri par des milliers d’anges aux ailes lumineuses, tandis que l’enfer envoyait des créatures tordues et féroces. Kirjiniel observait le chaos, son regard mi-lumière, mi-ombre, prêt à défendre les humains coûte que coûte.</p>
+    <p><em>"Le monde ne m’appartient pas, mais je défendrai sa liberté,"</em> murmura-t-il en serrant Aequitas Nocturna.</p>
+  </div>
+
+  <!-- Épisode 14 -->
+  <div class="episode">
+    <h4>Épisode 14 : Le Conseil des Élus</h4>
+    <p>Elyon et les humains éveillés prirent le rôle de stratèges. Ils guidaient les civils vers des zones sûres et coordonnaient les attaques sur les forces ennemies. Chaque humain éveillé ajoutait une pièce au puzzle de la liberté, et Kirjiniel commença à sentir que l’avenir n’était plus entre ses seules mains.</p>
+  </div>
+
+  <!-- Épisode 15 -->
+  <div class="episode">
+    <h4>Épisode 15 : Seraphion contre Kirjiniel</h4>
+    <p>Le duel tant attendu éclata. Seraphion, l’archange parfait, et Kirjiniel, l’archange déchu, s’affrontèrent dans un ciel en feu. Les éclairs de lumière et d’ombre frappaient avec une puissance capable de briser les montagnes. Chaque coup était une idéologie, chaque parade un choix moral.</p>
+  </div>
+
+  <!-- Épisode 16 -->
+  <div class="episode">
+    <h4>Épisode 16 : La Fusion des Ténèbres et Lumière</h4>
+    <p>Kirjiniel activa pleinement Aequitas Absoluta. La lumière et l’ombre fusionnèrent autour de lui, créant une énergie capable de remodeler la réalité. Seraphion fut repoussé, étonné par la puissance combinée du jugement et de la liberté incarnés.</p>
+  </div>
+
+  <!-- Épisode 17 -->
+  <div class="episode">
+    <h4>Épisode 17 : Sacrifices Ultimes</h4>
+    <p>Nocthar et Elyon défendirent une ville entière contre des vagues d’ennemis. Le combat était intense, chaque mouvement calculé. Nocthar disparut finalement dans les ombres pour sceller une brèche dimensionnelle, et Elyon sentit le poids du sacrifice peser sur tous les survivants.</p>
+  </div>
+
+  <!-- Épisode 18 -->
+  <div class="episode">
+    <h4>Épisode 18 : Le Conseil Céleste en Colère</h4>
+    <p>Les archanges restants, furieux de l’insubordination de Kirjiniel, intensifièrent leurs attaques. Mais chaque offensive se heurta à la volonté humaine et à la puissance du Déchu. Le monde semblait suspendu entre espoir et destruction.</p>
+  </div>
+
+  <!-- Épisode 19 -->
+  <div class="episode">
+    <h4>Épisode 19 : Le Jugement Approche</h4>
+    <p>Kirjiniel sentit la limite de ses forces. Pour vaincre Seraphion et mettre fin au conflit, il devait utiliser le <strong>Verdict Absolu</strong>, une énergie capable de juger le ciel et l’enfer. Elyon lui donna la force morale nécessaire pour franchir ce pas, lui rappelant pourquoi il se battait.</p>
+  </div>
+
+  <!-- Épisode 20 -->
+  <div class="episode">
+    <h4>Épisode 20 : Duel Final</h4>
+    <p>Le ciel et la terre tremblaient alors que Kirjiniel et Seraphion s’affrontaient pour le dernier combat. Chaque coup faisait trembler le monde, des éclairs de lumière et d’ombre frappant les montagnes, les rivières et les cités humaines. Le destin du monde entier reposait sur la force et la sagesse de l’Archange Déchu.</p>
+  </div>
+
+  <!-- Épisode 21 -->
+  <div class="episode">
+    <h4>Épisode 21 : La Révélation</h4>
+    <p>Kirjiniel comprit que sa chute n’était pas une punition mais un choix nécessaire pour montrer que le libre arbitre est plus puissant que l’ordre ou le chaos. Chaque humain pouvait maintenant influencer le monde. La vraie leçon : le jugement appartient à chacun.</p>
+  </div>
+
+  <!-- Épisode 22 -->
+  <div class="episode">
+    <h4>Épisode 22 : L’Ultime Décision</h4>
+    <p>Brandissant Aequitas Absoluta, Kirjiniel se tenait prêt à juger le ciel et l’enfer. Seraphion, épuisé, comprit que l’ordre absolu ne pouvait régir le monde et s’inclina légèrement, acceptant la volonté de Kirjiniel et la liberté des humains.</p>
+  </div>
+
+  <!-- Épisode 23 -->
+  <div class="episode">
+    <h4>Épisode 23 : Fins Alternatives</h4>
+    <p><strong>Fin sombre :</strong> Kirjiniel gagne, mais devient un dieu solitaire, maître de tout mais privé d’empathie.<br>
+       <strong>Fin équilibrée :</strong> Kirjiniel détruit le système ciel/enfer et crée un monde libre où humains et anges coexistent.<br>
+       <strong>Fin tragique :</strong> Kirjiniel et Seraphion s’entretuent, laissant les humains décider seuls du futur du monde.</p>
+  </div>
+
+  <!-- Épisode 24 -->
+  <div class="episode">
+    <h4>Épisode 24 : Épilogue</h4>
+    <p>Selon la fin choisie, les humains reconstruisent le monde. Elyon devient un leader et transmet l’enseignement de Kirjiniel. Le nom de l’Archange Déchu résonne comme symbole de liberté et de choix. Les survivants comprennent que l’avenir est entre leurs mains, et que chaque décision compte.</p>
+  </div>
+
+</section>
+
+<section id="trailer">
+  <h2>Trailer</h2>
+  <video controls>
+    <source src="trailer.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+</section>
+
+</body>
+</html>
