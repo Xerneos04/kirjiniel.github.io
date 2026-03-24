@@ -34,6 +34,61 @@
 </head>
 <link rel="icon" type="image/png" href="images/favicon.png">
 <body>
+ <div id="intro-screen">
+  <h1>Kirjiniel</h1>
+  <p>Le jugement interdit</p>
+  <button onclick="enterSite()">Entrer</button>
+</div>
+
+<style>
+#intro-screen {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:black;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+  text-align:center;
+}
+
+#intro-screen h1 {
+  font-size:4em;
+  color:#ffcc00;
+  text-shadow:0 0 20px #ffcc00;
+}
+
+#intro-screen p {
+  margin:20px;
+  opacity:0.7;
+}
+
+#intro-screen button {
+  padding:15px 30px;
+  font-size:1.2em;
+  background:transparent;
+  border:2px solid #ffcc00;
+  color:#ffcc00;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+#intro-screen button:hover {
+  background:#ffcc00;
+  color:black;
+}
+</style>
+
+<script>
+function enterSite() {
+  document.getElementById("intro-screen").style.display = "none";
+}
+</script>
 
 <header class="glow">Kirjiniel - L'Archange Brisé</header>
 
