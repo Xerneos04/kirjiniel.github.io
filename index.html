@@ -65,14 +65,16 @@
   cursor:pointer;
 }
 </style>
-
-<script>
-document.getElementById("enterBtn").onclick = function() {
+ 
   document.getElementById("intro-screen").style.display = "none";
 };
 </script>
  <body>
-
+<div id="intro-screen">
+  <h1>Kirjiniel</h1>
+  <p>Le jugement interdit</p>
+  <button id="enterBtn">Entrer</button>
+</div>
 <script>
 function enterSite() {
   document.getElementById("intro-screen").style.display = "none";
@@ -703,4 +705,11 @@ function enterSite() {
 </section>
 
 </body>
+   <script>
+window.onload = function() {
+  document.getElementById("enterBtn").onclick = function() {
+    document.getElementById("intro-screen").style.display = "none";
+  };
+};
+</script>
 </html>
