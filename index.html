@@ -33,12 +33,6 @@
 </style>
 </head>
 <link rel="icon" type="image/png" href="images/favicon.png">
-<body><div id="intro-screen">
-  <h1>Kirjiniel</h1>
-  <p>Le jugement interdit</p>
-  <button onclick="enterSite()">Entrer</button>
-</div>
-
 <style>
 #intro-screen {
   position:fixed;
@@ -62,11 +56,6 @@
   text-shadow:0 0 20px #ffcc00;
 }
 
-#intro-screen p {
-  margin:20px;
-  opacity:0.7;
-}
-
 #intro-screen button {
   padding:15px 30px;
   font-size:1.2em;
@@ -74,14 +63,14 @@
   border:2px solid #ffcc00;
   color:#ffcc00;
   cursor:pointer;
-  transition:0.3s;
-}
-
-#intro-screen button:hover {
-  background:#ffcc00;
-  color:black;
 }
 </style>
+
+<script>
+document.getElementById("enterBtn").onclick = function() {
+  document.getElementById("intro-screen").style.display = "none";
+};
+</script><body>
 
 <script>
 function enterSite() {
